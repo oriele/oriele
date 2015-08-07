@@ -44,5 +44,10 @@ group :development, :test do
 
   gem 'devise'
 
+  group :development, :test, :production do
+    gem 'pg'
+    gem "activerecord-postgresql-adapter"
+  end
+
 end
 
