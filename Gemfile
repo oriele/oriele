@@ -44,9 +44,13 @@ group :development, :test do
 
   gem 'devise'
 
-  group :development, :test, :production do
+  group :production do
     gem 'pg'
     gem "activerecord-postgresql-adapter"
+  end
+
+  group :development, :test do
+    gem 'sqlite3'
   end
 
 end
